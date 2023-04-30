@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LKSandbox.Executor
 {
-    internal class VehicleAssemblyUnit<T> where T : IVehicleFramework //,IVehicleAssemblyUnit<T>
+    internal class VehicleAssemblyUnit<T> where T : IVehicleParts //,IVehicleAssemblyUnit<T>
     {
         public IVehicleEngineData VehicleBuilder(T item)
         {

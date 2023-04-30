@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LKSandbox.Interfaces
 {
-    internal interface IEngineServiceType : IVehicleFramework
+    internal interface IEngineServiceType : IVehicleParts
     {
         string Code { get; }
         string Name { get; }

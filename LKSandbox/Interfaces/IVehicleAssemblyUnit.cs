@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LKSandbox.Interfaces
 {
-    internal interface IVehicleAssemblyUnit<T> where T : IVehicleFramework
+    internal interface IVehicleAssemblyUnit<T> where T : IVehicleParts
     {
-        public IVehicleEngineData VehicleBuilder<T>(T vehicleFramework) where T : IVehicleFramework;
+        public IVehicleEngineData VehicleBuilder<T>(T vehicleFramework) where T : IVehicleParts;
     }
 }

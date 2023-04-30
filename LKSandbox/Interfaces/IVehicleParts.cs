@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LKSandbox.Interfaces
 {
-    internal interface IVehicleFramework
+    internal interface IVehicleParts
     {
         bool HasApprovalToBuild<T>(T approvementDataProvider) where T : IApprovementDataProvider;
         decimal BuildDuration<T>(T buildDurationDataProvider) where T : IBuildDurationDataProvider;

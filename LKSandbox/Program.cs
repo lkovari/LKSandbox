@@ -14,7 +14,9 @@ var approveDateEngine = new DateOnly(1965, 2, 2);
 IApprovementDataProvider engineApprovementDataProvider = new EngineApprovementDataProvider(approveDateEngine);
 IBuildDurationDataProvider engineBuildDurationDataProvider = new EngineBuildDurationDataProvider(1965);
 ITotalCostDataProvider engineTotalCostDataProvider = new EngineTotalCostDataProvider(approveDateEngine);
+
 IVehicleDataProviders engineVehicleDataProviders = new VehicleDataProviders(engineApprovementDataProvider, engineBuildDurationDataProvider, engineTotalCostDataProvider);
+
 var vehicleEngineAssembled = vehicleAssemblyUnit.VehicleBuilder(vehicleFrameworkEngine, engineVehicleDataProviders);
 
 var vehicleEngineAssembledJson = JsonSerializer.Serialize(vehicleEngineAssembled);
@@ -26,10 +28,12 @@ var approveDateChasis = new DateOnly(1966, 12, 10);
 IApprovementDataProvider chasisApprovementDataProvider = new ChasisApprovementDataProvider(approveDateChasis);
 IBuildDurationDataProvider chasisBuildDurationDataProvider = new ChasisBuildDurationDataProvider(1966);
 ITotalCostDataProvider chasisTotalCostDataProvider = new ChasisTotalCostDataProvider(approveDateChasis);
+
 IVehicleDataProviders chasisVehicleDataProviders = new VehicleDataProviders(chasisApprovementDataProvider, chasisBuildDurationDataProvider, chasisTotalCostDataProvider);
+
 var vehicleChasisAssembled = vehicleAssemblyUnit.VehicleBuilder(vehicleFrameworkEngine, chasisVehicleDataProviders);
 
-var vehicleChasisAssembledJson = JsonSerializer.Serialize (vehicleChasisAssembled);
+var vehicleChasisAssembledJson = JsonSerializer.Serialize(vehicleChasisAssembled);
 Console.WriteLine($"{{\"Chasis\":\"{vehicleChasisAssembledJson}\"}}");
 
 

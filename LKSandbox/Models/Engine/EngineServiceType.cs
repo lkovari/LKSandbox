@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Engine;
 
 namespace LKSandbox.Models.Engine
 {
-    internal class EngineServiceType : IEngineServiceType
+    public class EngineServiceType : IEngineServiceType
     {
         public int Code { get; }
 

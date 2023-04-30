@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IVehicleParts
+    public interface IVehicleParts
     {
         bool HasApprovalToBuild<T>(T approvementDataProvider) where T : IApprovementDataProvider;
         decimal BuildDuration<T>(T buildDurationDataProvider) where T : IBuildDurationDataProvider;

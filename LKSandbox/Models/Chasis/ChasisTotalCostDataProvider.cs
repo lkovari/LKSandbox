@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Chasis;
 
 namespace LKSandbox.Models.Chasis
 {
-    internal class ChasisTotalCostDataProvider : IChasisTotalCostDataProvider
+    public class ChasisTotalCostDataProvider : IChasisTotalCostDataProvider
     {
         public DateOnly Installation { get; }
 

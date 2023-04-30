@@ -2,7 +2,7 @@
 
 namespace LKSandbox.Models.Engine
 {
-    internal class EngineBuildDurationDataProvider : IBuildDurationDataProvider
+    public class EngineBuildDurationDataProvider : IBuildDurationDataProvider
     {
         public decimal EngineSpecificBuildNumber { get; }
 

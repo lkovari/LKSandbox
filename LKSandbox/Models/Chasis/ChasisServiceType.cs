@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Chasis;
 
 namespace LKSandbox.Models.Chasis
 {
-    internal class ChasisServiceType : IChasisServiceType
+    public class ChasisServiceType : IChasisServiceType
     {
         public string Name { get; }
 

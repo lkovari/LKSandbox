@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IVehicleDataProviders
+    public interface IVehicleDataProviders
     {
         IApprovementDataProvider ApprovementDataProvider { get; }
         IBuildDurationDataProvider BuildDurationDataProvider { get; }

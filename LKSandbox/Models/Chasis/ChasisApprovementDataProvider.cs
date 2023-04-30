@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Chasis;
 
 namespace LKSandbox.Models.Chasis
 {
-    internal class ChasisApprovementDataProvider : IChasisApprovementDataProvider
+    public class ChasisApprovementDataProvider : IChasisApprovementDataProvider
     {
         public DateOnly Approvement { get; }
 

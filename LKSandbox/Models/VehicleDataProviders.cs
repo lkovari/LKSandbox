@@ -2,7 +2,7 @@
 
 namespace LKSandbox.Models
 {
-    internal class VehicleDataProviders : IVehicleDataProviders
+    public class VehicleDataProviders : IVehicleDataProviders
     {
         public IApprovementDataProvider ApprovementDataProvider { get; }
 

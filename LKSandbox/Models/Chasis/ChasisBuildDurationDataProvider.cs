@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Chasis;
 
 namespace LKSandbox.Models.Chasis
 {
-    internal class ChasisBuildDurationDataProvider : IChasisBuildDurationDataProvider
+    public class ChasisBuildDurationDataProvider : IChasisBuildDurationDataProvider
     {
         public decimal ChasisSpecificBuildNumber { get; }
 

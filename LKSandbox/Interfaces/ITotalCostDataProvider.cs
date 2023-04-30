@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface ITotalCostDataProvider
+    public interface ITotalCostDataProvider
     {
         public ITotalCostData ProvideData();
     }

@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IBuildDurationDataProvider
+    public interface IBuildDurationDataProvider
     {
         public IBuildDurationData ProvideData();
     }

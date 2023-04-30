@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Engine;
 
 namespace LKSandbox.Models.Engine
 {
-    internal class EngineTotalCostDataProvider : IEngineTotalCostDataProvider
+    public class EngineTotalCostDataProvider : IEngineTotalCostDataProvider
     {
         public DateOnly Installation { get; }
 

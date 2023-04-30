@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IApprovementData
+    public interface IApprovementData
     {
         DateOnly Date { get; }
         bool IsApproved { get; }

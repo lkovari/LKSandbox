@@ -3,7 +3,7 @@ using LKSandbox.Interfaces.Engine;
 
 namespace LKSandbox.Models.Engine
 {
-    internal class EngineApprovementDataProvider : IEngineApprovementDataProvider
+    public class EngineApprovementDataProvider : IEngineApprovementDataProvider
     {
         public DateOnly Approvement { get; }
 

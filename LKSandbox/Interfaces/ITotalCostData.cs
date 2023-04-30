@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface ITotalCostData
+    public interface ITotalCostData
     {
         decimal TotalCost { get; }
     }

@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IBuildDurationData
+    public interface IBuildDurationData
     {
         string Name { get; }
         DateOnly BuildDate { get; }

@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces
 {
-    internal interface IApprovementDataProvider
+    public interface IApprovementDataProvider
     {
         public IApprovementData ProvideData();
     }

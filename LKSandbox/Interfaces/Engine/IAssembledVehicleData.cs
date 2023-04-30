@@ -1,6 +1,6 @@
 ﻿namespace LKSandbox.Interfaces.Engine
 {
-    internal interface IVehicleEngineData
+    public interface IAssembledVehicleData
     {
         bool ApprovementData { get; }
         decimal BuildDurationData { get; }

@@ -2,7 +2,7 @@
 
 namespace LKSandbox.Models
 {
-    internal class VehicleEngineData : IVehicleEngineData
+    internal class AssembledVehicleData : IAssembledVehicleData
     {
         public bool ApprovementData { get; }
 
@@ -10,7 +10,7 @@ namespace LKSandbox.Models
 
         public decimal TotalCostData { get; }
 
-        public VehicleEngineData(bool approvementData, decimal buildDurationData, decimal totalCostData)
+        public AssembledVehicleData(bool approvementData, decimal buildDurationData, decimal totalCostData)
         {
             ApprovementData = approvementData;
             BuildDurationData = buildDurationData;

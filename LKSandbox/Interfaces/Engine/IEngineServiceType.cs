@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Interfaces
+namespace LKSandbox.Interfaces.Engine
 {
     internal interface IEngineServiceType : IVehicleParts
     {
-        string Code { get; }
+        int Code { get; }
         string Name { get; }
         string Description { get; }
     }

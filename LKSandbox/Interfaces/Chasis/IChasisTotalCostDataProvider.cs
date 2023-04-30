@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Interfaces
+namespace LKSandbox.Interfaces.Chasis
 {
-    internal interface IEngineTotalCostDataProvider : ITotalCostDataProvider
+    internal interface IChasisTotalCostDataProvider : ITotalCostDataProvider
     {
         DateOnly Installation { get; }
     }

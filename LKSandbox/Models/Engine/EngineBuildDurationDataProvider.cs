@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Models
+namespace LKSandbox.Models.Engine
 {
     internal class EngineBuildDurationDataProvider : IBuildDurationDataProvider
     {
-        public decimal EngineSpecificBaseNumber { get; }
+        public decimal EngineSpecificBuildNumber { get; }
 
         public EngineBuildDurationDataProvider(decimal specificNumber)
         {
-            EngineSpecificBaseNumber = specificNumber;
+            EngineSpecificBuildNumber = specificNumber;
         }
 
         public IBuildDurationData ProvideData()

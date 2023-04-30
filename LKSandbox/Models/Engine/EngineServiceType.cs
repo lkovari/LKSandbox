@@ -1,21 +1,22 @@
 ﻿using LKSandbox.Interfaces;
+using LKSandbox.Interfaces.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Models
+namespace LKSandbox.Models.Engine
 {
     internal class EngineServiceType : IEngineServiceType
     {
-        public string Code { get; }
+        public int Code { get; }
 
         public string Name { get; }
 
         public string Description { get; }
 
-        public EngineServiceType(string code, string name, string desc)
+        public EngineServiceType(int code, string name, string desc)
         {
             Code = code;
             Name = name;

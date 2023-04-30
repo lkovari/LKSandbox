@@ -1,11 +1,12 @@
 ﻿using LKSandbox.Interfaces;
+using LKSandbox.Interfaces.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Models
+namespace LKSandbox.Models.Engine
 {
     internal class EngineTotalCostDataProvider : IEngineTotalCostDataProvider
     {

@@ -21,5 +21,10 @@ namespace LKSandbox.Models
             BuildDate = build;
             Days = days;
         }
+
+        public override string ToString()
+        {
+            return Name + " " + BuildDate.ToString() + " " + Days;
+        }
     }
 }

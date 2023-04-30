@@ -1,33 +1,40 @@
 ﻿using LKSandbox.Interfaces;
+using LKSandbox.Interfaces.Chasis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LKSandbox.Models
+namespace LKSandbox.Models.Chasis
 {
     internal class ChasisServiceType : IChasisServiceType
     {
-        public string Name => "Chasis 1";
+        public string Name { get; }
 
-        public string Description => "Chasis 1 description";
+        public string Description { get; }
 
-        public string ChasisNumber => "CH-38934789";
+        public string ChasisNumber { get; }
+
+        public ChasisServiceType(string name, string desc, string chasisNum) {
+            Name = name;
+            Description = desc;
+            ChasisNumber = chasisNum;
+        }
 
         public decimal BuildDuration<T>(T buildDurationDataProvider) where T : IBuildDurationDataProvider
         {
-            throw new NotImplementedException();
+            return buildDurationDataProvider.ProvideData().Days;
         }
 
         public bool HasApprovalToBuild<T>(T approvementDataProvider) where T : IApprovementDataProvider
         {
-            throw new NotImplementedException();
+            return approvementDataProvider.ProvideData().IsApproved;
         }
 
         public decimal TotalCost<T>(T totalCostDataProvider) where T : ITotalCostDataProvider
         {
-            throw new NotImplementedException();
+            return totalCostDataProvider.ProvideData().TotalCost;
         }
     }
 }

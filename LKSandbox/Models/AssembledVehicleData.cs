@@ -1,16 +1,17 @@
 ﻿using LKSandbox.Interfaces.Engine;
+using LKSandbox.Interfaces.Result;
 
 namespace LKSandbox.Models
 {
     internal class AssembledVehicleData : IAssembledVehicleData
     {
-        public bool ApprovementData { get; }
+        public IResultData ApprovementData { get; }
 
-        public decimal BuildDurationData { get; }
+        public IResultData BuildDurationData { get; }
 
-        public decimal TotalCostData { get; }
+        public IResultData TotalCostData { get; }
 
-        public AssembledVehicleData(bool approvementData, decimal buildDurationData, decimal totalCostData)
+        public AssembledVehicleData(IResultData approvementData, IResultData buildDurationData, IResultData totalCostData)
         {
             ApprovementData = approvementData;
             BuildDurationData = buildDurationData;

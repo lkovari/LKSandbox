@@ -16,5 +16,10 @@ namespace LKSandbox.Models.Result
             Date = date;
             IsApproved = approved;
         }
+        public override string ToString()
+        {
+            return Name + " Date: " + Date + " Approved: " + IsApproved;
+        }
+
     }
 }

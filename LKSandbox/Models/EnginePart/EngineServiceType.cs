@@ -19,19 +19,23 @@ namespace LKSandbox.Models.Engine
             Description = desc;
         }
 
-        public IResultData BuildDuration<T>(T buildDurationDataProducer) where T : IBuildDurationDataProducer
+        public IBuildDurationData BuildDuration<T>(T buildDurationDataProducer) where T : IBuildDurationDataProducer
         {
             return buildDurationDataProducer.ProduceData(buildDurationDataProducer.DurationParameters);
         }
 
-        public IResultData HasApprovalToBuild<T>(T approvementDataProducer) where T : IApprovementDataProducer
+        public IApprovementData ApprovalToBuild<T>(T approvementDataProducer) where T : IApprovementDataProducer
         {
             return approvementDataProducer.ProduceData(approvementDataProducer.ApprovementParameters);
         }
 
-        public IResultData TotalCost<T>(T totalCostDataProducer) where T : ITotalCostDataProducer
+        public ITotalCostData TotalCost<T>(T totalCostDataProducer) where T : ITotalCostDataProducer
         {
             return totalCostDataProducer.ProduceData(totalCostDataProducer.TotalCostParameters);
+        }
+        public override string ToString()
+        {
+            return "Name " + Name + " Code " + Code + " Description " + Description;
         }
     }
 }

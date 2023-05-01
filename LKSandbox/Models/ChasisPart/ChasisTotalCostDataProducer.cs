@@ -17,7 +17,7 @@ namespace LKSandbox.Models.Chasis
             TotalCostParameters = totalCostParameters;
         }
 
-        public IResultData ProduceData<T>(T totalCostParameters) where T : ITotalCostParameters
+        public ITotalCostData ProduceData<T>(T totalCostParameters) where T : ITotalCostParameters
         {
             var days = totalCostParameters.DateRange.End.DayNumber - totalCostParameters.DateRange.Begin.DayNumber;
             // apply the TotalCostParameters data as parameter to calculate the Total Cost

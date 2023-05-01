@@ -1,5 +1,4 @@
 ﻿using LKSandbox.Interfaces.Chasis;
-using LKSandbox.Interfaces.DataProducers;
 using LKSandbox.Interfaces.Parameters;
 using LKSandbox.Interfaces.Result;
 using LKSandbox.Models.Result;
@@ -18,7 +17,7 @@ namespace LKSandbox.Models.Chasis
             ApprovementParameters = approvementParameters;
         }
 
-        IResultData IApprovementDataProducer.ProduceData<T>(T approvementParameters)
+        public IApprovementData ProduceData<T>(T approvementParameters) where T : IApprovementParameters
         {
             // apply the ApprovementParameters data as parameter to calculate Approved or not or other
             return new ApprovementData(approvementParameters.Name, approvementParameters.DateRange.End, false);

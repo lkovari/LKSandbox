@@ -18,7 +18,7 @@ namespace LKSandbox.Models.Engine
             _approvementParameters = approvementParameters;
         }
 
-        public IResultData ProduceData<T>(T approvementParameters) where T : IApprovementParameters
+        public IApprovementData ProduceData<T>(T approvementParameters) where T : IApprovementParameters
         {
             // apply the ApprovementParameters data as parameter to calculate Approved or not or other
             return new ApprovementData(_approvementParameters.Name, _approvementParameters.DateRange.End, true);

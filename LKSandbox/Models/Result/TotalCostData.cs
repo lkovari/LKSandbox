@@ -13,5 +13,9 @@ namespace LKSandbox.Models.Result
             Name = name;
             TotalCost = totalCost;
         }
+        public override string ToString()
+        {
+            return Name + " $" + TotalCost;
+        }
     }
 }

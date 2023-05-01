@@ -5,8 +5,8 @@ namespace LKSandbox.Interfaces
 {
     public interface IVehiclePartType
     {
-        IResultData HasApprovalToBuild<T>(T approvementDataProducer) where T : IApprovementDataProducer;
-        IResultData BuildDuration<T>(T buildDurationDataProducer) where T : IBuildDurationDataProducer;
-        IResultData TotalCost<T>(T totalCostDataProducer) where T : ITotalCostDataProducer;
+        IApprovementData ApprovalToBuild<T>(T approvementDataProducer) where T : IApprovementDataProducer;
+        IBuildDurationData BuildDuration<T>(T buildDurationDataProducer) where T : IBuildDurationDataProducer;
+        ITotalCostData TotalCost<T>(T totalCostDataProducer) where T : ITotalCostDataProducer;
     }
 }

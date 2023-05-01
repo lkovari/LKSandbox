@@ -4,8 +4,8 @@ namespace LKSandbox.Interfaces.Engine
 {
     public interface IAssembledVehicleData
     {
-        IResultData ApprovementData { get; }
-        IResultData BuildDurationData { get; }
-        IResultData TotalCostData { get; }
+        IApprovementData ApprovementData { get; }
+        IBuildDurationData BuildDurationData { get; }
+        ITotalCostData TotalCostData { get; }
     }
 }

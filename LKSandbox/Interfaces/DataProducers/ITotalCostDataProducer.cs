@@ -6,6 +6,6 @@ namespace LKSandbox.Interfaces.DataProducers
     public interface ITotalCostDataProducer
     {
         public ITotalCostParameters TotalCostParameters { get; }
-        public IResultData ProduceData<T>(T totalCostParameters) where T : ITotalCostParameters;
+        public ITotalCostData ProduceData<T>(T totalCostParameters) where T : ITotalCostParameters;
     }
 }

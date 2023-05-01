@@ -8,7 +8,7 @@ namespace LKSandbox.Executor
     {
         public IAssembledVehicleData VehicleBuilder(Tvp vehiclePartType, Tvd vehicleDataProducers)
         {
-            var approvementData = vehiclePartType.HasApprovalToBuild(vehicleDataProducers.ApprovementDataProducer);
+            var approvementData = vehiclePartType.ApprovalToBuild(vehicleDataProducers.ApprovementDataProducer);
             var buildDurationData = vehiclePartType.BuildDuration(vehicleDataProducers.BuildDurationDataProducer);
             var totalCostData = vehiclePartType.TotalCost(vehicleDataProducers.TotalCostDataProducer);
             return new AssembledVehicleData(approvementData, buildDurationData, totalCostData);

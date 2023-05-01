@@ -5,13 +5,13 @@ namespace LKSandbox.Models
 {
     internal class AssembledVehicleData : IAssembledVehicleData
     {
-        public IResultData ApprovementData { get; }
+        public IApprovementData ApprovementData { get; }
 
-        public IResultData BuildDurationData { get; }
+        public IBuildDurationData BuildDurationData { get; }
 
-        public IResultData TotalCostData { get; }
+        public ITotalCostData TotalCostData { get; }
 
-        public AssembledVehicleData(IResultData approvementData, IResultData buildDurationData, IResultData totalCostData)
+        public AssembledVehicleData(IApprovementData approvementData, IBuildDurationData buildDurationData, ITotalCostData totalCostData)
         {
             ApprovementData = approvementData;
             BuildDurationData = buildDurationData;

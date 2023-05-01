@@ -6,6 +6,6 @@ namespace LKSandbox.Interfaces.DataProducers
     public interface IBuildDurationDataProducer
     {
         public IDurationParameters DurationParameters { get; }
-        public IResultData ProduceData<T>(T durationParameters) where T : IDurationParameters;
+        public IBuildDurationData ProduceData<T>(T durationParameters) where T : IDurationParameters;
     }
 }

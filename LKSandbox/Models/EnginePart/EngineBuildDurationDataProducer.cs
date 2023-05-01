@@ -18,7 +18,7 @@ namespace LKSandbox.Models.Engine
             _durationParameters = durationParameters;
         }
 
-        public IResultData ProduceData<T>(T durationParameters) where T : IDurationParameters
+        public IBuildDurationData ProduceData<T>(T durationParameters) where T : IDurationParameters
         {
             // apply the DurationParameters data as parameter to calculate Build Duration
             return new BuildDurationData("Name:" + _durationParameters.Name, _durationParameters.DateRange.End, 1965);
